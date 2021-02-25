@@ -1,0 +1,13 @@
+{
+    "extensionName": "LED CONTROL",
+    "extensionPort": 12345,
+    "blockSpecs":
+        [
+            [" ", "LED %m.led_num %m.led_state", "led_switch", 1, "Off"]
+        ],
+    "menus":
+        {
+            "led_num": ["1", "2", "3", "4", "5", "6"],
+            "led_state": ["On", "Off"]
+        }
+}
