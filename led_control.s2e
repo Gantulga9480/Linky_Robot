@@ -1,13 +1,18 @@
 {
-    "extensionName": "LED CONTROL",
-    "extensionPort": 12345,
-    "blockSpecs":
-        [
-            [" ", "LED %m.led_num %m.led_state", "led_switch", 1, "Off"]
-        ],
-    "menus":
-        {
-            "led_num": ["1", "2", "3", "4", "5", "6"],
-            "led_state": ["On", "Off"]
-        }
+"extensionName": "LED CONTROL",
+"extensionPort": 12345,
+"blockSpecs":
+    [
+        ["r", "SENSOR %m.sensor", "sensorData"],
+        [" ", "LED %m.led_num TURN %m.led_state  ", "led_switch", "1", "0"],
+        [" ", "MOTOR %m.motor_num DIR %m.led_state SPEED %m.motor_state", "motor_control", "1", "1", "100"]
+    ],
+"menus":
+    {
+    "sensor": ["1", "2", "3"],
+    "led_num": ["1", "2", "3", "4", "5", "6"],
+    "led_state": ["1", "0"],
+    "motor_num": ["1", "2"],
+    "motor_state": ["000", "100", "150", "200", "250"]
+    }
 }

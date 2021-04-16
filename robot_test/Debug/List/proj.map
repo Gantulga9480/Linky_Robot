@@ -1,0 +1,43 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+leds                                                                              0x0160      30
+ledData                                                                           0x017E       4
+motorData                                                                         0x0182       8
+rx_buffer                                                                         0x018A       8
+tx_buffer                                                                         0x0192       8
+tx_wr_index                                                                       0x019A       1
+tx_rd_index                                                                       0x019B       1
+tx_counter                                                                        0x019C       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+cmd                                                                               R5           1
+datalen                                                                           R6,R7        2
+i                                                                                 R8,R9        2
+motorSpeed                                                                        R10,R11      2
+rx_wr_index                                                                       R4           1
+rx_rd_index                                                                       R13          1
+rx_counter                                                                        R12          1
+rx_buffer_overflow                                                                R2.0      1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+led_init                                                                          0x0005D     28
+led_on                                                                            0x00079     23
+led_off                                                                           0x00090     24
+usart_rx_isr                                                                      0x000A8     34
+getchar                                                                           0x000CA     19
+usart_tx_isr                                                                      0x000DD     33
+putchar                                                                           0x000FE     36
+main                                                                              0x00122     92
+led_control                                                                       0x0017E     12
+motor_control                                                                     0x0018A    198
+get_data                                                                          0x00250     41
+sensor_report                                                                     0x00279     33

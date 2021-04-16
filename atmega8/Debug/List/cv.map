@@ -1,0 +1,33 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+resData                                                                           0x0160       2
+rx_buffer                                                                         0x0162       8
+tx_buffer                                                                         0x016A       8
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+rx_wr_index                                                                       R5           1
+rx_rd_index                                                                       R4           1
+rx_counter                                                                        R7           1
+rx_buffer_overflow                                                                R2.0      1bit
+tx_wr_index                                                                       R6           1
+tx_rd_index                                                                       R9           1
+tx_counter                                                                        R8           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+led_init                                                                          0x00062     27
+led_on                                                                            0x0007D     23
+led_off                                                                           0x00094     24
+usart_rx_isr                                                                      0x000AC     27
+getchar                                                                           0x000C7     19
+usart_tx_isr                                                                      0x000DA     20
+main                                                                              0x000EE    140
+get_data                                                                          0x0017A     25

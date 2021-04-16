@@ -1,19 +1,23 @@
 {
   "name": "led_control",
   "version": "1.0.0",
-  "description": "LED control for Linky Robot",
+  "description": "",
   "main": "led_control.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git remote add origin https://github.com/Gantulga9480/Linky_Robot.git"
+    "url": "git+https://github.com/Gantulga9480/Linky_Robot.git"
   },
-  "author": "Gantulga",
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gantulga9480/Linky_Robot/issues"
+  },
+  "homepage": "https://github.com/Gantulga9480/Linky_Robot#readme",
   "dependencies": {
-    "serialport": "^9.0.7",
-    "websocket": "^1.0.33"
+    "http": "0.0.1-security",
+    "serialport": "^9.0.7"
   }
 }
